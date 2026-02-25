@@ -6,6 +6,89 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Sabrina Rahaman Dola</p>
+    <header>
+        <h2>Student Registration Form</h2>
+    </header>
+
+    <main>
+        <form action="/action.php" method="post">
+
+            <fieldset>
+                <legend>Student Personal Info</legend>
+
+                <p>
+                    <label for="fullname">Full Name: </label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+                </p>
+
+                <p>
+                    <label for="email">Email Address: </label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email">
+                </p>
+
+                <p>
+                    <label for="password">Password: </label>
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </p>
+
+                <p>
+                    <label for="dob"></label> Date of Birth:
+                    <input type="date" id="dob" name="dob">
+                </p>
+
+                <p>Select Gender: </p>
+
+                <label for="male"></label>
+                <input type="radio" id="male" name="gender" value="male"> Male
+
+                <label for="female"></label>
+                <input type="radio" id="female" name="gender" value="female"> Female
+
+                <label for="other"></label>
+                <input type="radio" id="other" name="gender" value="other"> Other
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Student Academic Info</legend>
+                
+                <p>
+                    <label for="dept"></label> Department: 
+                    <select id="dept" name="dept">
+                        <option value="cse">Computer Science & Engineering</option>
+                        <option value="eee">Electrical & Electronics Engineering</option>
+                        <option value="bba">Bachelor of Business Administration</option>
+                        <option value="eng">English</option>
+                    </select>
+                </p>
+
+                <p>Skills: </p>
+
+                <label for="html"></label>
+                <input type="checkbox" name="skill" id="html" value="html"> HTML
+
+                <label for="css"></label>
+                <input type="checkbox" name="skill" id="css" value="css"> CSS
+
+                <label for="js"></label>
+                <input type="checkbox" name="skill" id="js" value="js"> JAVA SCRIPT
+
+            </fieldset>
+
+            <br>
+
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </p>
+
+        </form>
+    </main>
+
+    <footer>
+        Copyright American International University- Bangladesh
+    </footer>
 </body>
 </html>

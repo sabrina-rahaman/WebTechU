@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+</head>
+<body>
+
+        <!--Check Prime Number-->
+    <script>
+        var num = 29;
+        var isPrime = true;
+        
+        for (var i = 2; i < num; i++) {
+        if (num % i === 0) {
+            isPrime = false;
+            break;
+        }
+        }
+        
+        if (isPrime) {
+        console.log(num + " is a prime number.");
+        } else {
+        console.log(num + " is not a prime number.");
+        }
+    </script>
+
+    <!--Factorial Check-->
+
+
+    <script>
+        var num =5
+     var Factorial=1
+
+        for(var i=num;i>0;i--){
+        Factorial*=i;
+        }
+        console.log("Factorial of"+num+"is:"+Factorial);
+    </script>
+
+    <!--Reverse a String-->
+    <script>
+        var str ="JavaScript";
+        var reversedSte="";
+        for (var i=str.length-1;i>=0;i--){
+            reversedSte+=str[i];
+        }
+    </script>
+
+    <!--Sum of array Elements-->
+
+    <script>
+        var arr=[6,7,8,9,10];
+        var sum=0
+        for(var i =0;i<arr.length;i++){
+            sum+=arr[i];
+        }
+        console.log("Sum of array element:"+sum);
+    </script>
+
+
+    <!--Simple Object-->
+
+    <script>
+        
+        var person = {
+            name:"Sabrina",
+            age:20
+        };
+
+        console.log("Name: " + person.name);
+        console.log("Age" + person.age);
+
+    </script>
+
+
+
+
+</body>
+</html>
